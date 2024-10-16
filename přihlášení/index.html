@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlášení</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            background-image: url('violet.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        main {
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            width: 60vh;
+            height: 30vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            text-align: center;
+            
+        }
+
+        form {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center; 
+            
+        }
+
+        input {
+            margin: 10px 0; 
+            padding: 10px; 
+            width: 80%; 
+            background-color: rgba(0,0,0,0.5);
+            border: none;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px; 
+            background-color: #470953; 
+            border: none; 
+            border-radius: 5px; 
+            color: white; 
+            cursor: pointer; 
+            width: 20vh;
+            transition: 500ms;
+        }
+
+        button:hover {
+            background-color: #660c72; 
+            width: 15vh;
+        }
+        label {
+            padding: 3px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 6);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Zadejte E-mail" required>
+
+            <label for="password">Heslo:</label>
+            <input type="password" id="password" placeholder="Zadejte Heslo" required>
+
+            <button type="submit">Přihlásit se</button>
+        </form>
+    </main>
+</body>
+</html>
