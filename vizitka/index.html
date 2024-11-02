@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizitka</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(abstract-polygonal-shape-black-background-free-vector.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+        }
+        .viz {
+            width: 40rem;
+            height: 20rem;
+            position: relative;
+            transform-style: preserve-3d;
+            border-radius: 1rem;
+            transition: transform 5s ease, box-shadow 0.5s ease; 
+        }
+        .viz:hover {
+            transform: rotateY(180deg);
+            box-shadow: 0 0 100px rgba(77, 0, 77, 0.7); 
+        }
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.6rem;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .front {
+            background-image: url(ca30b798e69df139ca392835614fc8d5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .front img {
+            height: 10rem;
+            width: 7.5rem;
+            border-radius: 1rem;
+        }
+        .text {
+            margin-left: 1rem;
+        }
+
+        .back {
+            background-color: rgb(77, 0, 77);
+            transform: rotateY(180deg);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="viz">
+            <div class="front">
+                <img src="bea3491915571d34a026753f4a872000.jpg" alt="">
+                <div class="text">
+                    <h3>Jméno: Pavel</h3>
+                    <h3>Příjmení: Vokurka</h3>
+                    <h3>E-mail: pavel.vokurka55@seznam.cz</h3>
+                    <h3>Telefon: 514 698 569</h3>
+                </div>
+            </div>
+            <div class="back">
+                <h3>Okrademe vás s.r.o</h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
